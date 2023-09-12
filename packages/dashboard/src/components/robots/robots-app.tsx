@@ -7,7 +7,7 @@ import { createMicroApp } from '../micro-app';
 import { RmfAppContext } from '../rmf-app';
 import { RobotSummary } from './robot-summary';
 
-export const RobotsApp = createMicroApp('Robots', () => {
+export const RobotsApp = createMicroApp('Ships', () => {
   const rmf = React.useContext(RmfAppContext);
 
   const [fleets, setFleets] = React.useState<string[]>([]);
@@ -71,7 +71,7 @@ export const RobotsApp = createMicroApp('Robots', () => {
               ? Object.entries(fleet.robots).map<RobotTableData>(([name, robot]) => ({
                   fleet: fleet.name || '',
                   name,
-                  battery: robot.battery && +robot.battery.toFixed(2),
+                  // battery: robot.battery && +robot.battery.toFixed(2),
                   status: robot.status,
                   estFinishTime:
                     robot.task_id && tasks[robot.task_id]

@@ -256,7 +256,7 @@ export const RobotSummary = React.memo(({ onClose, robot }: RobotSummaryProps) =
         <Grid item xs={8}>
           <DialogTitle align="center">Robot summary: {robotState?.name}</DialogTitle>
         </Grid>
-        <Grid item xs={2}>
+        {/* <Grid item xs={2}>
           <Grid container justifyContent="flex-end">
             <Typography variant="subtitle1">{`${
               robotState?.battery ? (robotState.battery * 100).toFixed(0) : 0
@@ -265,7 +265,7 @@ export const RobotSummary = React.memo(({ onClose, robot }: RobotSummaryProps) =
               <>{showBatteryIcon(robot, robotState.battery ? robotState?.battery * 100 : 0)}</>
             )}
           </Grid>
-        </Grid>
+        </Grid> */}
       </Grid>
       <Divider />
       {taskProgress && (

@@ -64,7 +64,7 @@ export function downloadCsvMinimal(timestamp: Date, allTasks: TaskState[]) {
       task.booking.unix_millis_request_time
         ? `${new Date(task.booking.unix_millis_request_time).toLocaleDateString()}`
         : 'unknown',
-      task.booking.requester ? task.booking.requester : 'unknown',
+      task.booking.requester ? task.booking.requester : 'Pont.OS',
       task.booking.id,
       task.category ? task.category : 'unknown',
       task.assigned_to ? task.assigned_to.name : 'unknown',

@@ -7,7 +7,7 @@ import { AppEvents } from '../app-events';
 import { createMicroApp } from '../micro-app';
 import { RmfAppContext } from '../rmf-app';
 
-export const RobotInfoApp = createMicroApp('Robot Info', () => {
+export const RobotInfoApp = createMicroApp('Ship Info', () => {
   const rmf = React.useContext(RmfAppContext);
 
   const [robotState, setRobotState] = React.useState<RobotState | null>(null);
