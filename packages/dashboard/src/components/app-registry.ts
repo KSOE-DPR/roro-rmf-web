@@ -16,6 +16,6 @@ export const AppRegistry = {
   Tasks: TasksApp,
   'Task Details': TaskDetailsApp,
   'Task Logs': TaskLogsApp,
-  Robots: RobotsApp,
-  'Robot Info': RobotInfoApp,
+  Ships: RobotsApp,
+  'Ship Info': RobotInfoApp,
 };

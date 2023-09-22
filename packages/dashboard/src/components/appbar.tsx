@@ -596,7 +596,7 @@ export const AppBar = React.memo(({ extraToolbarItems }: AppBarProps): React.Rea
       </Menu>
       {openCreateTaskForm && (
         <CreateTaskForm
-          user={username ? username : 'unknown user'}
+          user={username ? username : 'KSOE'}
           patrolWaypoints={waypointNames}
           cleaningZones={cleaningZoneNames}
           pickupPoints={pickupPoints}
